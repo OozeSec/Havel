@@ -16,7 +16,7 @@ while True:
         print('\n>: Bonfire Has Been Lit\n')
         break
     elif ui == "YES" or ui == "yes":
-        a = sh('echo "Website" && read target && echo "Campaign" && read campaign && gobuster dir --url $target --wordlist ~/.havel/dict/list.txt --output ~/.havel/logs/$campaign > /dev/null 2>&1')
+        a = sh('echo "Website" && read target && echo "Campaign" && read campaign && gobuster dir --url $target --wordlist ~/.havel/dict/common.txt --output ~/.havel/logs/$campaign > /dev/null 2>&1')
         b = print("\n>: Target Smashed\n")
     else:
         print("\n>: ... \n")
